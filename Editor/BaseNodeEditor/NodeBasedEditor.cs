@@ -56,12 +56,12 @@ public class NodeBasedEditor : EditorWindow
         DrawGrid(100, 0.4f, Color.gray);
         DrawMenuBar();
 
-        // DrawNodes();
-        // DrawConnections();
+        DrawNodes();
+        DrawConnections();
 
-        // DrawConnectionLine(Event.current);
+        DrawConnectionLine(Event.current);
 
-        // ProcessNodeEvents(Event.current);
+        ProcessNodeEvents(Event.current);
         ProcessEvents(Event.current);
 
         if (GUI.changed) Repaint();
